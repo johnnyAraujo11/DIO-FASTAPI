@@ -12,9 +12,13 @@
 <h2>Executar o código </h2>
 
 <h3>Criar o projeto:</h3>
-bash```
-poetry init nome-da-pasta-do-projeto
-```
+
+<pre>
+ <code >
+  poetry init nome-da-pasta-do-projeto
+</code>
+</pre>
+
 <h3>abra a pasta que foi criada.</h3> 
 
 <h2>Instale as dependências:</h2> 
