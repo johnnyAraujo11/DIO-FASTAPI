@@ -2,49 +2,46 @@
 <h2>WorkoutAPI</h2> 
 <p>Esta é uma API de competição de crossfit chamada WorkoutAPI (isso mesmo rs, eu acabei unificando duas coisas que gosto: codar e treinar). É uma API pequena, devido a ser um projeto mais hands-on e simplificado nós desenvolveremos uma API de poucas tabelas, mas com o necessário para você aprender como utilizar o FastAPI.</p>
 
-# Async
-# Uma API assíncrona é uma API em que as operações são feitas de forma não bloqueante, permitindo que o cliente continue executando outras tarefas enquanto a operação da API ainda está em andamento
-
-# Modelagem de entidade e relacionamento - MER
+<h2> Async</h2>
+<p>Uma API assíncrona é uma API em que as operações são feitas de forma não bloqueante, permitindo que o cliente continue executando outras tarefas enquanto a operação da API ainda está em andamento.
+ </p> 
+<h2> Modelagem de entidade e relacionamento - MER </h2>
 ![Modelo Entidade Relacionamento](mer.jpg)
 
-# Executar o código
+<h2>Executar o código </h2>
 
-## Criar o projeto:
+<h3>Criar o projeto</h3>:
 ```
     poetry init nome-da-pasta-do-projeto
 ```
-## abra a pasta que foi criada
+<h3>abra a pasta que foi criada.</h3> 
 
-## Instale as dependências:
+<h2>Instale as dependências:</h2> 
 ```
     poetry add   "fastapi", "uvicorn", "sqlalchemy", "alembic", "asyncpg", "pydantic-settings", "fastapi-pagination"
-
 ```
-## Se preferir utilizar o pyenv:
+
+<h3>Se preferir utilizar o pyenv:</h3> 
 ```
     pyenv virtualenv 3.11.4 workoutapi
     pyenv activate workoutapi
     pip install -r requirements.txt
-
 ```
-
-# Após instalar o dokcer-compose, execute:
+<h3>Após instalar o dokcer-compose, execute:</h3>
 ```
     docker-compose up -d
 ```
 
-# Para subir o banco de dados, caso não tenha o docker-compose instalado, faça a instalação e logo em seguida, execute se estiver no windows, caso contrário, procure como executar no linux:
+<h3>Para subir o banco de dados, caso não tenha o docker-compose instalado, faça a instalação e logo em seguida, execute se estiver no windows, caso contrário, procure como executar no linux:</h3> 
 ```
     make create-migrations
 ```
-
-# E por último execute para subir as tabelas criadas para o banco de dados que executa todas as migrações do Alembic, aplicando as alterações de schema pendentes no banco de dados até a versão mais recente e garante que a estrutura do banco fique sincronizada com os models da aplicação:
+<h3>E por último execute para subir as tabelas criadas para o banco de dados que executa todas as migrações do Alembic, aplicando as alterações de schema pendentes no banco de dados até a versão mais recente e garante que a estrutura do banco fique sincronizada com os models da aplicação:</h3>
 ```
     make run-migrations
 ```
 
-# Referências
+<h2>Referências</h2> 
 
 [FastAPI](https://fastapi.tiangolo.com/)
 
