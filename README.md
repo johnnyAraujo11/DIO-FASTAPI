@@ -18,29 +18,29 @@ bash```
 <h3>abra a pasta que foi criada.</h3> 
 
 <h2>Instale as dependências:</h2> 
-bash```
+```bash
     poetry add   "fastapi", "uvicorn", "sqlalchemy", "alembic", "asyncpg", "pydantic-settings", "fastapi-pagination"
-```
+
 
 <h3>Se preferir utilizar o pyenv:</h3> 
-bash```
+```bash
     pyenv virtualenv 3.11.4 workoutapi
     pyenv activate workoutapi
     pip install -r requirements.txt
-```
+
 <h3>Após instalar o dokcer-compose, execute:</h3>
-bash```
+```bash
     docker-compose up -d
-```
+
 
 <h3>Para subir o banco de dados, caso não tenha o docker-compose instalado, faça a instalação e logo em seguida, execute se estiver no windows, caso contrário, procure como executar no linux:</h3> 
-bash```
+```bash
     make create-migrations
-```
+
 <h3>E por último execute para subir as tabelas criadas para o banco de dados que executa todas as migrações do Alembic, aplicando as alterações de schema pendentes no banco de dados até a versão mais recente e garante que a estrutura do banco fique sincronizada com os models da aplicação:</h3>
-bash```
+```bash
     make run-migrations
-```
+
 
 <h2>Referências</h2> 
 
