@@ -1,6 +1,6 @@
-# Constuindo um API com o FastAPI
-# WorkoutAPI
-# Esta é uma API de competição de crossfit chamada WorkoutAPI (isso mesmo rs, eu acabei unificando duas coisas que gosto: codar e treinar). É uma API pequena, devido a ser um projeto mais hands-on e simplificado nós desenvolveremos uma API de poucas tabelas, mas com o necessário para você aprender como utilizar o FastAPI.
+<h1>Constuindo um API com o FastAPI </h1> 
+<h2>WorkoutAPI</h2> 
+<p>Esta é uma API de competição de crossfit chamada WorkoutAPI (isso mesmo rs, eu acabei unificando duas coisas que gosto: codar e treinar). É uma API pequena, devido a ser um projeto mais hands-on e simplificado nós desenvolveremos uma API de poucas tabelas, mas com o necessário para você aprender como utilizar o FastAPI.</p>
 
 # Async
 # Uma API assíncrona é uma API em que as operações são feitas de forma não bloqueante, permitindo que o cliente continue executando outras tarefas enquanto a operação da API ainda está em andamento
