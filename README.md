@@ -6,40 +6,41 @@
 <p>Uma API assíncrona é uma API em que as operações são feitas de forma não bloqueante, permitindo que o cliente continue executando outras tarefas enquanto a operação da API ainda está em andamento.
  </p> 
 <h2> Modelagem de entidade e relacionamento - MER </h2>
-![Modelo Entidade Relacionamento](mer.jpg)
+<img src = "mer.jpg"> 
+
 
 <h2>Executar o código </h2>
 
-<h3>Criar o projeto</h3>:
-```bash
+<h3>Criar o projeto:</h3>
+bash```
     poetry init nome-da-pasta-do-projeto
 
 <h3>abra a pasta que foi criada.</h3> 
 
 <h2>Instale as dependências:</h2> 
-```
+bash```
     poetry add   "fastapi", "uvicorn", "sqlalchemy", "alembic", "asyncpg", "pydantic-settings", "fastapi-pagination"
-```
+
 
 <h3>Se preferir utilizar o pyenv:</h3> 
-```
+bash```
     pyenv virtualenv 3.11.4 workoutapi
     pyenv activate workoutapi
     pip install -r requirements.txt
-```
+
 <h3>Após instalar o dokcer-compose, execute:</h3>
-```
+bash```
     docker-compose up -d
-```
+
 
 <h3>Para subir o banco de dados, caso não tenha o docker-compose instalado, faça a instalação e logo em seguida, execute se estiver no windows, caso contrário, procure como executar no linux:</h3> 
-```
+bash```
     make create-migrations
-```
+
 <h3>E por último execute para subir as tabelas criadas para o banco de dados que executa todas as migrações do Alembic, aplicando as alterações de schema pendentes no banco de dados até a versão mais recente e garante que a estrutura do banco fique sincronizada com os models da aplicação:</h3>
-```
+bash```
     make run-migrations
-```
+
 
 <h2>Referências</h2> 
 
